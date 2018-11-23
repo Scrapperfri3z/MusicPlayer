@@ -1,3 +1,11 @@
+//Gloabal Variables
+color white = #FFFFFF;
+boolean music = false;
+boolean volumeGui = false;
+
+
+
+
 void setup () {
   size(500, 600);
   //Using WIDTH and HEIGHT Key Varaibles, communciaiton to the display Geometry
@@ -7,14 +15,19 @@ void setup () {
   titleFont = createFont ("Harrington", 55); //Must also Tools / Create Font / Find Font / Do Not Press "OK"
 
   quitButtonSetup();
-  musicPlayerGUI_Setup();
+
 }
 
 void draw() {
+  background(white); 
+  musicPlayerGUI_Setup();
   quitButtonDraw();
+  volumeGui();
+  println("X: " + mouseX + " Y: " + mouseY);
 }
 
 void mouseClicked() { 
   quitButtonMouseClicked();
-  musicPlayerButtons();
+    musicPlayerButtons();
+
 }
