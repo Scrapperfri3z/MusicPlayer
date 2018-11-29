@@ -20,7 +20,9 @@ void musicPlayerGUI_Setup() {
     image(pause, width*2/5, height*3/5 );
   }
   rect(width*4/6, height*3/5, 100, 100);//Skip
+  image(skip, width*4/6, height*3/5 );
   rect(width*4/30, height*3/5, 100, 100);//Back
+  image(back, width*4/30,  height*3/5 );
   rect(width*3/4, height*2/2.4, 50, 50);//volume
 
   

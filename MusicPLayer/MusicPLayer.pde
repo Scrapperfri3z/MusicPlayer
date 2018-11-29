@@ -1,3 +1,10 @@
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+
 import controlP5.*;
 
 //Gloabal Variables
@@ -7,7 +14,9 @@ boolean volumeGui = false;
 PImage play;
 PImage pause;
 boolean playImage = true;
-  import controlP5.*;
+PImage skip;
+PImage back;
+
 
 
 
@@ -24,10 +33,15 @@ void setup () {
   //Image Loading
   play = loadImage("play.png");
   pause = loadImage("pause.png");
+  skip = loadImage("skip.png");
+  back = loadImage("back.png");
   pause.resize(100, 100);
   play.resize(100, 100);
+  skip.resize(100, 100);
+  back.resize(100, 100);
 
- // V.setSwitch(true);
+
+ //V.setSwitch(true);
 }
 void draw() {
 
