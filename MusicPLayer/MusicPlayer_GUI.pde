@@ -12,12 +12,20 @@ void musicPlayerGUI_Setup() {
   rect(0, height/2, width, height);
   stroke(1);
   fill(255);
-  rect(width*2/5, height*3/5, 100, 100);//Play/Pause
+  // rect(width*2/5, height*3/5, 100, 100);//Play/Pause
+  if (playImage == true) {
+    image(play, width*2/5, height*3/5 );
+  }
+  if (playImage == false) {
+    image(pause, width*2/5, height*3/5 );
+  }
   rect(width*4/6, height*3/5, 100, 100);//Skip
   rect(width*4/30, height*3/5, 100, 100);//Back
   rect(width*3/4, height*2/2.4, 50, 50);//volume
 
-  fill(0);
-  //rect(width*2/5, height*3/3.9, 100, 100);//Play/Pause
   
+
+
+ // fill(0);
+ // rect(width*2/5, height*3/3.9, 100, 100);//Play/Pause
 }
